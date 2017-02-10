@@ -47,8 +47,6 @@ android_app {
         enabled: false,
     },
 
-    min_sdk_version: "30",
-    target_sdk_version: "31",
     privileged: true,
     system_ext_specific: true,
     platform_apis: true,
