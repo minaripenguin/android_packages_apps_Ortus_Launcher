@@ -16,8 +16,16 @@
 
 package com.statix.launcher;
 
+import android.content.ComponentName;
+import android.content.Intent;
+import android.view.View;
+
+import com.android.launcher3.R;
+import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.uioverrides.QuickstepLauncher;
 import com.android.systemui.plugins.shared.LauncherOverlayManager;
+
+import com.statix.launcher.hpapps.db.HpDatabaseHelper;
 
 public class StatixLauncher extends QuickstepLauncher {
 
@@ -26,4 +34,23 @@ public class StatixLauncher extends QuickstepLauncher {
         return new OverlayCallbackImpl(this);
     }
 
+    private void startActivitySafelyAuth(View v, Intent intent, ItemInfo item) {
+        Utils.showSecurePrompt(this, getString(R.string.hp_apps_unlock, item.title), () -> {
+            super.startActivitySafely(v, intent, item);
+        });
+    }
+
+    @Override
+    public boolean startActivitySafely(View v, Intent intent, ItemInfo item) {
+        HpDatabaseHelper db = HpDatabaseHelper.getInstance(this);
+        ComponentName cn = item.getTargetComponent();
+        boolean isProtected = cn != null && db.isPackageProtected(cn.getPackageName());
+
+        if (isProtected) {
+            startActivitySafelyAuth(v, intent, item);
+            return true;
+        } else {
+            return super.startActivitySafely(v, intent, item);
+        }
+    }
 }

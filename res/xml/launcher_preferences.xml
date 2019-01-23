@@ -72,6 +72,10 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <Preference
+        android:key="pref_hp_apps"
+        android:title="@string/hp_apps_manager_name" />
+
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"

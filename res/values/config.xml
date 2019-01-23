@@ -1,4 +1,5 @@
 <resources>
     <string name="wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
     <string name="local_colors_extraction_class" translatable="false">com.statix.launcher.ThemedLocalColorExtractor</string>
+    <string name="app_filter_class" translatable="false">com.statix.launcher.hpapps.HiddenAppsFilter</string>
 </resources>
