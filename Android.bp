@@ -33,7 +33,6 @@ android_app {
     ],
 
     static_libs: [
-        "Launcher3CommonDepsLib",
         "QuickstepResLib",
         "libGoogleFeed",
         "monet",
@@ -41,6 +40,7 @@ android_app {
     srcs: [
         ":launcher-src-no-build-config",
         "src/**/*.java",
+        "src_build_config/**/*.java",
     ],
     optimize: {
         proguard_flags_files: ["proguard.flags"],
