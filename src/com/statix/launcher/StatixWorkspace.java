@@ -3,7 +3,10 @@ package com.statix.launcher;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import com.android.launcher3.Launcher;
 import com.android.launcher3.Workspace;
+
+import com.statix.launcher.touch.StatixWorkspaceTouchListener;
 
 public class StatixWorkspace extends Workspace {
 
@@ -26,5 +29,6 @@ public class StatixWorkspace extends Workspace {
      */
     public StatixWorkspace(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        setOnTouchListener(new StatixWorkspaceTouchListener(Launcher.getLauncher(context), this));
     }
 }
