@@ -38,8 +38,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.LauncherAppState;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
-import com.android.launcher3.Utilities;
 
 import com.statix.launcher.Utils;
 import com.statix.launcher.hpapps.db.HpComponent;
@@ -141,7 +141,7 @@ public class HpAppsActivity extends Activity implements
     }
 
     private void showOnBoarding(boolean forceShow) {
-        SharedPreferences preferenceManager = Utilities.getPrefs(this);
+        SharedPreferences preferenceManager = LauncherPrefs.getPrefs(this);
         if (!forceShow && preferenceManager.getBoolean(KEY_TRUST_ONBOARDING, false)) {
             return;
         }

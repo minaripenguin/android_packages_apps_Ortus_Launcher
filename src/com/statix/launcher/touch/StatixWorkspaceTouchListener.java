@@ -6,8 +6,8 @@ import android.os.PowerManager;
 import android.view.MotionEvent;
 
 import com.android.launcher3.Launcher;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.Workspace;
-import com.android.launcher3.Utilities;
 import com.android.launcher3.touch.WorkspaceTouchListener;
 
 public class StatixWorkspaceTouchListener extends WorkspaceTouchListener {
@@ -31,7 +31,7 @@ public class StatixWorkspaceTouchListener extends WorkspaceTouchListener {
     }
 
     private boolean isDoubleTapEnabled() {
-        SharedPreferences preferences = Utilities.getPrefs(mContext.getApplicationContext());
+        SharedPreferences preferences = LauncherPrefs.getPrefs(mContext.getApplicationContext());
         return preferences.getBoolean(KEY_DT_GESTURE, true);
     }
 
