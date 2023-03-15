@@ -38,7 +38,9 @@ android_app {
         "monet",
     ],
     srcs: [
-        ":launcher-src-no-build-config",
+        ":launcher-src",
+        ":launcher-quickstep-src",
+        ":launcher-src_shortcuts_overrides",
         "src/**/*.java",
         "src_build_config/**/*.java",
     ],
