@@ -33,6 +33,7 @@ android_app {
     ],
 
     static_libs: [
+        "launcher-testing-shared",
         "QuickstepResLib",
         "libGoogleFeed",
         "monet",
