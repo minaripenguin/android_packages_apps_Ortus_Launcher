@@ -1,4 +1,4 @@
-package com.statix.launcher;
+package com.rising.launcher;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,29 +6,29 @@ import android.util.AttributeSet;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.Workspace;
 
-import com.statix.launcher.touch.StatixWorkspaceTouchListener;
+import com.rising.launcher.touch.RisingWorkspaceTouchListener;
 
-public class StatixWorkspace extends Workspace {
+public class RisingWorkspace extends Workspace {
 
     /**
-     * Used to inflate the StatixWorkspace from XML.
+     * Used to inflate the RisingWorkspace from XML.
      *
      * @param context The application's context.
      * @param attrs The attributes set containing the Workspace's customization values.
      */
-    public StatixWorkspace(Context context, AttributeSet attrs) {
+    public RisingWorkspace(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
     /**
-     * Used to inflate the StatixWorkspace from XML.
+     * Used to inflate the RisingWorkspace from XML.
      *
      * @param context The application's context.
      * @param attrs The attributes set containing the Workspace's customization values.
      * @param defStyle Unused.
      */
-    public StatixWorkspace(Context context, AttributeSet attrs, int defStyle) {
+    public RisingWorkspace(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setOnTouchListener(new StatixWorkspaceTouchListener(Launcher.getLauncher(context), this));
+        setOnTouchListener(new RisingWorkspaceTouchListener(Launcher.getLauncher(context), this));
     }
 }

@@ -48,7 +48,7 @@
         attributes and intent filters the same
         -->
         <activity
-            android:name="com.statix.launcher.StatixLauncher"
+            android:name="com.rising.launcher.RisingLauncher"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
             android:stateNotNeeded="true"
@@ -78,7 +78,7 @@
 
 
         <activity
-            android:name="com.statix.launcher.hpapps.HpAppsActivity"
+            android:name="com.rising.launcher.hpapps.HpAppsActivity"
             android:label="@string/hp_apps_manager_name"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
             android:excludeFromRecents="true" />

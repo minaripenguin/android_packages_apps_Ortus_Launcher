@@ -1,6 +1,6 @@
-package com.statix.launcher;
+package com.rising.launcher;
 
-import static com.statix.launcher.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
+import static com.rising.launcher.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import androidx.preference.Preference;
 import com.android.launcher3.R;
 import com.android.launcher3.settings.SettingsActivity.LauncherSettingsFragment;
 
-import com.statix.launcher.hpapps.HpAppsActivity;
+import com.rising.launcher.hpapps.HpAppsActivity;
 
-public class StatixSettingsFragment extends LauncherSettingsFragment {
+public class RisingSettingsFragment extends LauncherSettingsFragment {
 
     protected static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
     public static final String KEY_HP_APPS = "pref_hp_apps";

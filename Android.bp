@@ -4,13 +4,13 @@
 //
 
 package {
-    default_applicable_licenses: ["packages_apps_Statix_Launcher_license"],
+    default_applicable_licenses: ["packages_apps_Rising_Launcher_license"],
 }
 
 // Added automatically by a large-scale-change
 // See: http://go/android-license-faq
 license {
-    name: "packages_apps_Statix_Launcher_license",
+    name: "packages_apps_Rising_Launcher_license",
     visibility: [":__subpackages__"],
     license_kinds: [
         "SPDX-license-identifier-Apache-2.0",
@@ -26,7 +26,7 @@ java_import {
 }
 
 android_app {
-    name: "StatixLauncher",
+    name: "RisingLauncher",
 
     resource_dirs: [
         "res",
@@ -62,7 +62,7 @@ android_app {
     ],
 
     jacoco: {
-        include_filter: ["com.android.launcher3.**", "com.statix.launcher.**"],
+        include_filter: ["com.android.launcher3.**", "com.rising.launcher.**"],
     },
 
     required: ["privapp_whitelist_com.android.launcher3"],

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.launcher.hpapps.db;
+package com.rising.launcher.hpapps.db;
 
 import android.graphics.drawable.Drawable;
 import androidx.annotation.NonNull;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.launcher.hpapps;
+package com.rising.launcher.hpapps;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,8 +24,8 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import com.statix.launcher.hpapps.db.HpComponent;
-import com.statix.launcher.hpapps.db.HpDatabaseHelper;
+import com.rising.launcher.hpapps.db.HpComponent;
+import com.rising.launcher.hpapps.db.HpDatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;

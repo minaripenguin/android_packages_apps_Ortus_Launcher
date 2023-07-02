@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.launcher.hpapps;
+package com.rising.launcher.hpapps;
 
 import android.content.ComponentName;
 import android.content.Context;
 
 import com.android.launcher3.AppFilter;
 
-import com.statix.launcher.hpapps.db.HpDatabaseHelper;
+import com.rising.launcher.hpapps.db.HpDatabaseHelper;
 
 @SuppressWarnings("unused")
 public class HiddenAppsFilter extends AppFilter {

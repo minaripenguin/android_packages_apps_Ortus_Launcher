@@ -1,4 +1,4 @@
-package com.statix.launcher;
+package com.rising.launcher;
 
 import android.app.KeyguardManager;
 import android.content.Context;

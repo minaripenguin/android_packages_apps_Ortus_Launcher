@@ -1,4 +1,4 @@
-package com.statix.launcher.touch;
+package com.rising.launcher.touch;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,14 +10,14 @@ import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.Workspace;
 import com.android.launcher3.touch.WorkspaceTouchListener;
 
-public class StatixWorkspaceTouchListener extends WorkspaceTouchListener {
+public class RisingWorkspaceTouchListener extends WorkspaceTouchListener {
 
     public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
     private final Context mContext;
     private final PowerManager mPowerManager;
 
-    public StatixWorkspaceTouchListener(Launcher launcher, Workspace<?> workspace) {
+    public RisingWorkspaceTouchListener(Launcher launcher, Workspace<?> workspace) {
         super(launcher, workspace);
         mContext = workspace.getContext();
         mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);

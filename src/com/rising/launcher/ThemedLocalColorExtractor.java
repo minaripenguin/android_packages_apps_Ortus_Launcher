@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.statix.launcher;
+package com.rising.launcher;
 
 import android.annotation.ColorInt;
 import android.app.WallpaperColors;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.statix.launcher;
+package com.rising.launcher;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -25,9 +25,9 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.uioverrides.QuickstepLauncher;
 import com.android.systemui.plugins.shared.LauncherOverlayManager;
 
-import com.statix.launcher.hpapps.db.HpDatabaseHelper;
+import com.rising.launcher.hpapps.db.HpDatabaseHelper;
 
-public class StatixLauncher extends QuickstepLauncher {
+public class RisingLauncher extends QuickstepLauncher {
 
     @Override
     protected LauncherOverlayManager getDefaultOverlay() {

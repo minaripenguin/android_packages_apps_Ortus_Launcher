@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.statix.launcher.hpapps;
+package com.rising.launcher.hpapps;
 
-import static com.statix.launcher.hpapps.db.HpComponent.Kind.HIDDEN;
-import static com.statix.launcher.hpapps.db.HpComponent.Kind.PROTECTED;
+import static com.rising.launcher.hpapps.db.HpComponent.Kind.HIDDEN;
+import static com.rising.launcher.hpapps.db.HpComponent.Kind.PROTECTED;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -41,9 +41,9 @@ import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 
-import com.statix.launcher.Utils;
-import com.statix.launcher.hpapps.db.HpComponent;
-import com.statix.launcher.hpapps.db.HpDatabaseHelper;
+import com.rising.launcher.Utils;
+import com.rising.launcher.hpapps.db.HpComponent;
+import com.rising.launcher.hpapps.db.HpDatabaseHelper;
 
 import java.util.List;
 
